@@ -5,31 +5,6 @@ const observer = {
     onEnd: () => console.log('End!')
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Our lion!
 const observable = {
     subscribe: function subscribe(obs) {
@@ -37,27 +12,6 @@ const observable = {
         obs.onEnd();
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Stay tuned!
 observable.subscribe(observer);

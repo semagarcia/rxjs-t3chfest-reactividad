@@ -11,24 +11,6 @@ const observer2 = {
     onEnd: () => console.log('[Obs2] End!')
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Our lion!
 const observable = {
     subscribe: function subscribe(obs) {
@@ -36,30 +18,6 @@ const observable = {
         obs.onEnd();
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Subscribe action
 observable.subscribe(observer1);

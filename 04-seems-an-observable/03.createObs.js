@@ -5,31 +5,6 @@ const observer = {
     onEnd: () => console.log('End!')
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Creating an observable with a subscribe property (like a factory)
 function createObservable(subscribe) {
     return {
@@ -37,61 +12,10 @@ function createObservable(subscribe) {
     };
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const lionObservable = createObservable((obs) => {
     ["GRR", "GRRRRRRRR", "GRRR"].forEach(obs.onData);
     obs.onEnd();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 lionObservable
     .subscribe(observer);
