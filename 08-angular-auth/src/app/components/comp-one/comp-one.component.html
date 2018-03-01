@@ -1,0 +1,8 @@
+<h2>I'm component one</h2>
+
+<h3 *ngIf="state?.logged">
+  Logged as {{ state?.profile }}
+</h3>
+<h3 *ngIf="!state?.logged">
+  User not logged...
+</h3>

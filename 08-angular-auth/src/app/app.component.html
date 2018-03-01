@@ -1,0 +1,34 @@
+<div class="navbar">
+  <demo-header></demo-header>
+</div>
+
+<div class="">
+  <div class="row">
+    <h1>Components</h1>
+  </div>
+  <div class="row">
+    <p>You are currently: {{ logInState }}</p>
+    <div *ngIf="logInState === 'Logged In'">
+      <p>User data:</p>
+
+        <ul>
+          <li>User logged as: {{ user }}</li>
+          <li>Profile: {{ profile }}</li>
+        </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="column-component">
+    <demo-comp-one></demo-comp-one>
+  </div>
+  <div class="column-component">
+    <demo-comp-two></demo-comp-two>
+  </div>
+  <div class="column-component">
+    <demo-comp-three></demo-comp-three>
+  </div>
+</div>
+

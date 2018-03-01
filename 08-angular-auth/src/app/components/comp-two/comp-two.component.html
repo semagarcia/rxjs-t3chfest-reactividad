@@ -1,0 +1,7 @@
+<h2>I'm component two</h2>
+<p>Guest component</p>
+<p *ngIf="!state?.logged">User not logged!</p>
+<ul *ngIf="state?.logged">
+  <li>User logged</li>
+  <li>Rol: {{ state.profile }}</li>
+</ul>

@@ -1,0 +1,16 @@
+<div>
+  <ul class="header-navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Section A</a></li>
+    <li><a href="#">Section B</a></li>
+    <li style="float:right" (click)="loginLogout()">
+      <div *ngIf="loginStatus;then loggedIn else loggedOut"></div>
+      <ng-template #loggedIn>
+        <a class="active" href="#">Log out</a>
+      </ng-template>
+      <ng-template #loggedOut>
+        <a class="active" href="#">Log in</a>
+      </ng-template>
+    </li>
+  </ul>
+</div>

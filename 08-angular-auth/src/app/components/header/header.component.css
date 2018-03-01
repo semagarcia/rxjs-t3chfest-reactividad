@@ -1,0 +1,27 @@
+ul.header-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.header-navbar li {
+    float: left;
+}
+
+ul.header-navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.header-navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.header-navbar .active {
+    background-color: #4CAF50;
+}

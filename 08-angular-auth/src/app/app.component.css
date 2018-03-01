@@ -1,0 +1,14 @@
+.navbar {
+  background-color: red;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container .column-component {
+  flex-grow: 1;
+}
