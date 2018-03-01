@@ -1,0 +1,14 @@
+//Rx.AsyncSubject<Integer> source = Rx.AsyncSubject.create();
+// https://blog.mindorks.com/understanding-rxjava-subject-publish-replay-behavior-and-async-subject-224d663d452f
+source = Rx.AsyncSubject.create();
+
+// It will get only 4 and onComplete
+source.subscribe(getFirstObserver());
+source.onNext(1);
+source.onNext(2);
+source.onNext(3);
+
+// It will also get only get 4 and onComplete
+source.subscribe(getSecondObserver());
+source.onNext(4);
+source.onComplete();
