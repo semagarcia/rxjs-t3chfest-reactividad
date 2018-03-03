@@ -11,7 +11,7 @@ Code repository of my talk about Rx and RxJS for [T3chFest2018](https://t3chfest
 - [08 - Angular Auth](#08)
 
 # Presentation (PPT)
-The presentation can be found [here](https://www.slideshare.net/sema_hkd/).
+The presentation can be found [here](https://www.slideshare.net/sema_hkd/t3chfest-2018-entendamos-de-una-vez-qu-es-eso-de-la-reactividad).
 
 # Examples
 ## 01 - Async DataSources <div id="01" />
