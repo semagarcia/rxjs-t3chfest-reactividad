@@ -63,6 +63,14 @@ Snippets related to the lion example (see the slides of the PPT):
 - *death-subject.js*: one subject created, which it will emit two values, then will be marked as complete (there is no more elements emitted). Although there is one value emitted (number 3), it is ignored because the stream is already finished by the previous *complete()* call. At this moment, the observer is subscribed yet, but no receives more data. However, after perform the *unsubscribe()*, if we try to emit a new value, we'll obtain *"Unhandled ObjectUnsubscribedError"*.
 
 ## 07 - Subject t3chfy state machine <div id="07" />
+This example simulates a kind of small state machine implemented through a Subject object, which is at the same time observer & observable. From the template/view we will send different events:
+- *normal*: sets the eyes in the normal position.
+- *email*: when the email input obtains the focus to write.
+- *write*: when the user writes a character.
+- *password*: when the password input obtains the focus to write. 
+- *discover*: when the user clicks out of the form.
+
+The example shos how using the same object (stateMachine), we send different topics (the previous list) which will be listen by the observable part (we subscribe to them), and we'll act accordingly.
 
 ## 08 - Angular Auth <div id="08" />
 Angular project made to show the use of subjects, subscribing to an source that emits the changes in the auth state (logged in / logged out). There are the following components in the UI:
